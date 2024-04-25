@@ -4,7 +4,7 @@ import { Card } from "../../collections/Card/Card";
 const cardsData = [
   {
     image: {
-      src: "/img/card/Desing.png",
+      src: "/img/card/Design.png",
       alt: "design",
       width: 60,
       height: 60,
@@ -34,7 +34,7 @@ const cardsData = [
 
 ]
 
-export const Main = ({ image, title, description }) => {
+export const Main = ({ image, title, description}) => {
   return (
     <div>
     <div>

@@ -4,6 +4,9 @@ import Image from "next/image";
 export const Card  = ({ image, title, description }) => {
     return (
         <div>
+            
+            <h3>{title}</h3>
+            <p>{description}</p>
             <Image
                 layout="responsive"
                 src={image.src}
@@ -11,8 +14,6 @@ export const Card  = ({ image, title, description }) => {
                 width={image.width}
                 height={image.height}
             />
-            <h3>{title}</h3>
-            <p>{description}</p>
         </div>
     )
 }
