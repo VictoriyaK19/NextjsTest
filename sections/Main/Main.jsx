@@ -1,5 +1,38 @@
 import Image from "next/image";
 
+const cardsData = [
+  {
+    image: {
+      src: "/img/card/Desing.png",
+      alt: "design",
+      width: 60,
+      height: 60,
+    },
+    title: "Brief",
+    description: "Complete brief writing or simple guidance on what to include, we've got you covered.",
+},{
+  image: {
+    src: "/img/card/customer_oriented.png",
+    alt: "customer oriented",
+    width: 60,
+    height: 60,
+  },
+  title: "Search",
+  description: "In-depth agency search covering, criteria matching, door knocking and due-dilligence vetting.",
+},
+{
+  image: {
+    src: "/img/card/business_meeting.png",
+    alt: "business meeting",
+    width: 60,
+    height: 60,
+  },
+  title: "Pitch",
+  description: "Comprehensive pitch management, including comms, diary management and pitch hosting.",
+},
+
+]
+
 export const Main = ({ image, title, description }) => {
   return (
     <div>
