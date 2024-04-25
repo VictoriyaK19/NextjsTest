@@ -1,5 +1,5 @@
 import { Hero } from "../sections/Hero";
-import { Main } from "../sections/Main"
+import { Main } from "../sections/Main";
 
 const heroProps = {
   image: { src: "/img/heroimg.png", alt: "", width: 1000, height: 1680 },
@@ -9,10 +9,15 @@ const heroProps = {
 };
 
 const mainProps = {
-  image:  { src: "../resources/video.png" },
+  image: {
+    src: "/img/video.png",
+    alt: "video img",
+    width: 300,
+    height: 500,
+  },
   title: "Managed agency selection",
-  description: "Strengthen yor onboarding process."
-}
+  description: "Strengthen yor onboarding process.",
+};
 
 export default function Home() {
   return (
@@ -27,7 +32,7 @@ export default function Home() {
       </head>
       <div>
         <Hero {...heroProps} />
-        <Main {...mainProps}/>
+        <Main {...mainProps} />
       </div>
     </>
   );
