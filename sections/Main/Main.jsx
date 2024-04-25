@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Card } from "../../collections/Card/Card";
 
 const cardsData = [
   {
@@ -36,9 +37,16 @@ const cardsData = [
 export const Main = ({ image, title, description }) => {
   return (
     <div>
+    <div>
       <h2>{title}</h2>
       <p>{description}</p>
       <Image src={image.src} alt={image.alt} width={image.width} height={image.height} />
+    </div>
+    <div>
+    {cardsData.map((card, index) => (
+          <Card key={index} {...card} />
+        ))}
+    </div>
     </div>
   );
 };
