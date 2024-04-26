@@ -21,7 +21,7 @@ const cardsData = [
     },
     title: "Brief",
     description:
-      "Complete brief writing or simple guidance on what to include, we've got you covered.",
+      "Complete <strong>brief writing or simple guidance</strong> on what to include, we've got you covered.",
   },
   {
     image: {
@@ -32,7 +32,7 @@ const cardsData = [
     },
     title: "Search",
     description:
-      "In-depth agency search covering, criteria matching, door knocking and due-dilligence vetting.",
+      "In-depth agency search covering, <strong>criteria matching</strong>, door knocking and due-dilligence vetting.",
   },
   {
     image: {
@@ -43,7 +43,7 @@ const cardsData = [
     },
     title: "Pitch",
     description:
-      "Comprehensive pitch management, including comms, diary management and pitch hosting.",
+      "Comprehensive <strong>pitch management</strong>, including comms, diary management and pitch hosting.",
   },
 ];
 

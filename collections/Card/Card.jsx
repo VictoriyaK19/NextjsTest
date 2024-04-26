@@ -25,7 +25,7 @@ export const Card = ({ image, title, description }) => {
 
       <StyledTextContainer>
         <StyledTitle>{title}</StyledTitle>
-        <StyledDescription>{description}</StyledDescription>
+        <StyledDescription dangerouslySetInnerHTML={{ __html: description }}></StyledDescription>
       </StyledTextContainer>
     </StyledCardContainer>
   );
