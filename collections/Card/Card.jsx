@@ -1,6 +1,10 @@
 // The Card to be exported goes here
 import Image from "next/image";
 
+import {
+
+} from "./elements";
+
 export const Card  = ({ image, title, description }) => {
     return (
         <div>
