@@ -12,7 +12,6 @@ export const StyledMainContainer = styled(({ ...props }) => (
   background-image: url("/img/background.png");
   background-repeat: no-repeat;
   text-align: center;
-  align-items: center;
   flex-direction: column;
   margin-top: 3rem;
 `;
@@ -20,7 +19,7 @@ export const StyledMainContainer = styled(({ ...props }) => (
 export const StyledTitle = styled(({ ...props }) => (
   <SectionHeading {...props} />
 ))`
-  margin-top: 0;
+  margin: 0;
 `;
 
 export const StyledDescription = styled(({ ...props }) => (
@@ -32,23 +31,32 @@ export const StyledDescription = styled(({ ...props }) => (
 export const StyledTextContainer = styled(({ ...props }) => (
   <SectionContainer {...props} />
 ))`
-  margin-bottom: 2rem;
+  margin: 1rem 0 2rem 0;
   flex-direction: column;
 `;
 
-export const StyledContainer = styled(({ ...props }) => <div {...props} />)`
-  text-align: center;
+export const StyledContainer = styled(({ ...props }) => (
+  <SectionContainer {...props} />
+))`
+  justify-content: center;
   align-items: center;
-  dispaly: flex;
+  flex-direction: column;
+  padding-bottom: 3rem;
+
+  @media (min-width: 1024px) {
+    flex-direction: row;
+  }
 `;
 
 export const StyledImageContainer = styled.div`
-  width: 70%;
-  height: 100%;
+  margin: 2rem;
+  max-width: 20rem;
+  width: 50%;
 `;
 
 export const StyledCardsContainer = styled.div`
-  width: 100%;
+  max-width: 33rem;
+  margin: 2rem;
   display: flex;
   flex-direction: column;
 `;

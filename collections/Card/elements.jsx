@@ -23,7 +23,6 @@ export const StyledImageContainer = styled.div`
 `;
 
 export const StyledTextContainer = styled(({ ...props }) => <div {...props} />)`
-  max-width: 26rem;
   padding: 1rem 0;
   display: flex;
   flex-direction: column;
