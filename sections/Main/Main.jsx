@@ -6,6 +6,9 @@ import {
   StyledDescription,
   StyledTextContainer,
   StyledTitle,
+  StyledContainer,
+  StyledImageContainer,
+  StyledCardsContainer,
 } from "./elements";
 
 const cardsData = [
@@ -52,10 +55,23 @@ export const Main = ({ image, title, description }) => {
         <StyledDescription>{description}</StyledDescription>
       </StyledTextContainer>
 
-    <Image src={image.src} width={image.width} height={image.height} />
-       {cardsData.map((card, index) => (
+      <StyledContainer>
+        <StyledImageContainer>
+          <Image
+            layout="responsive"
+            src={image.src}
+            alt={image.alt}
+            width={image.width}
+            height={image.height}
+          />
+        </StyledImageContainer>
+
+        <StyledCardsContainer>
+          {cardsData.map((card, index) => (
             <Card key={index} {...card} />
-          ))}  
+          ))}
+        </StyledCardsContainer>
+      </StyledContainer>
     </StyledMainContainer>
   );
 };

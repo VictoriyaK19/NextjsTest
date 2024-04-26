@@ -35,3 +35,20 @@ export const StyledTextContainer = styled(({ ...props }) => (
   margin-bottom: 2rem;
   flex-direction: column;
 `;
+
+export const StyledContainer = styled(({ ...props }) => <div {...props} />)`
+  text-align: center;
+  align-items: center;
+  dispaly: flex;
+`;
+
+export const StyledImageContainer = styled.div`
+  width: 70%;
+  height: 100%;
+`;
+
+export const StyledCardsContainer = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+`;
