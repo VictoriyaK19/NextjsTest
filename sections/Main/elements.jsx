@@ -17,7 +17,9 @@ export const StyledMainContainer = styled(({ ...props }) => (
 
   @media (max-width: 767px) {
     padding: 2rem;
-  }
+    background-size: contain;
+    background-position: center 20%;
+    }
 `;
 
 export const StyledTitle = styled(({ ...props }) => (
