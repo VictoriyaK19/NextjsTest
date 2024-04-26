@@ -9,9 +9,11 @@ import {
 export const StyledMainContainer = styled(({ ...props }) => (
   <SectionContainer {...props} />
 ))`
+margin: 0 auto;
   background-image: url("/img/background.png");
   background-repeat: no-repeat;
   text-align: center;
+  item-align: center;
   flex-direction: column;
   margin-top: 3rem;
 

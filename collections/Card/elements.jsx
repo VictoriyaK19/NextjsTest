@@ -3,7 +3,6 @@ import { SectionSubheading, SectionParagraph } from "~/components";
 
 export const StyledCardContainer = styled.div`
   max-width: 33vw;
-  width: 100%;
   align-items: center;
   display: flex;
   margin: 1rem;
@@ -57,6 +56,8 @@ export const StyledCardContainer = styled.div`
   border: 2px solid transparent;
   border-color: #006efd;
   color: #006efd;
+}
+
 `;
 
 export const StyledImageContainer = styled.div`
