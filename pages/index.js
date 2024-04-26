@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import { Hero } from "../sections/Hero";
 import { Main } from "../sections/Main";
 
@@ -22,7 +23,7 @@ const mainProps = {
 export default function Home() {
   return (
     <>
-      <head>
+      <Head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
@@ -30,7 +31,7 @@ export default function Home() {
           rel="stylesheet"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      </head>
+      </Head>
       <div>
         <Hero {...heroProps} />
         <Main {...mainProps} />
