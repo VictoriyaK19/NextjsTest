@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from 'react';
 import Image from "next/image";
 
 import {
@@ -9,10 +10,18 @@ import {
 } from "./elements";
 
 export const Card = ({ image, title, description }) => {
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 1024);
+    };
+    window.addEventListener('resize', handleResize);
+    handleResize();
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
   return (
-    <StyledCardContainer>
+    <StyledCardContainer isMobile={isMobile}>
       <StyledImageContainer>
-
         <Image
           layout="responsive"
           src={image.src}
@@ -22,7 +31,6 @@ export const Card = ({ image, title, description }) => {
         />
 
       </StyledImageContainer>
-
       <StyledTextContainer>
         <StyledTitle>{title}</StyledTitle>
         <StyledDescription dangerouslySetInnerHTML={{ __html: description }}></StyledDescription>

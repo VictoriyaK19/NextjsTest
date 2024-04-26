@@ -15,7 +15,7 @@ export const StyledMainContainer = styled(({ ...props }) => (
   flex-direction: column;
   margin-top: 3rem;
 
-  @media (max-width: 767px) {
+  @media (max-width: 1024px) {
     padding: 2rem;
     background-size: contain;
     background-position: center 20%;
@@ -28,7 +28,7 @@ export const StyledTitle = styled(({ ...props }) => (
   margin: 0;
   font-size: 2.5rem;
 
-  @media (max-width: 767px) {
+  @media (max-width: 1024px) {
     font-size: 1.2rem;
   }
 `;
@@ -39,7 +39,7 @@ export const StyledDescription = styled(({ ...props }) => (
   margin-top: 0;
   font-size: 1.3rem;
 
-  @media (max-width: 767px) {
+  @media (max-width: 1024px) {
     font-size: 0.8rem;
     margin: 0;
   }
@@ -51,7 +51,7 @@ export const StyledTextContainer = styled(({ ...props }) => (
   margin: 1rem 0 2rem 0;
   flex-direction: column;
 
-  @media (max-width: 767px) {
+  @media (max-width: 1024px) {
    margin: 0;
   }
 `;
@@ -74,7 +74,7 @@ export const StyledImageContainer = styled.div`
   max-width: 20rem;
   width: 50%;
 
-  @media (max-width: 767px) {
+  @media (max-width: 1024px) {
     width: 55%;
   }
 `;
@@ -85,7 +85,7 @@ export const StyledCardsContainer = styled.div`
   display: flex;
   flex-direction: column;
 
-  @media (max-width: 767px) {
+  @media (max-width: 1024px) {
     max-width: 100%;
     margin: 1rem 0 ;
   }
