@@ -9,7 +9,8 @@ import {
 export const StyledMainContainer = styled(({ ...props }) => (
   <SectionContainer {...props} />
 ))`
-margin: 0 auto;
+  margin: 0;
+  padding: 0;
   background-image: url("/img/background.png");
   background-repeat: no-repeat;
   text-align: center;
@@ -21,7 +22,7 @@ margin: 0 auto;
     padding: 2rem;
     background-size: contain;
     background-position: center 20%;
-    }
+  }
 `;
 
 export const StyledTitle = styled(({ ...props }) => (
@@ -54,7 +55,7 @@ export const StyledTextContainer = styled(({ ...props }) => (
   flex-direction: column;
 
   @media (max-width: 1024px) {
-   margin: 0;
+    margin: 0;
   }
 `;
 
@@ -89,6 +90,6 @@ export const StyledCardsContainer = styled.div`
 
   @media (max-width: 1024px) {
     max-width: 100%;
-    margin: 1rem 0 ;
+    margin: 1rem 0;
   }
 `;

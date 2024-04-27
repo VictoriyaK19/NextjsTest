@@ -20,8 +20,8 @@ export const StyledCardContainer = styled.div`
       &::before {
         content: "link to brief"; 
         position: absolute;
-        top: 10px; 
-        right: -5rem; 
+        top: 1px; 
+        right: -3.5rem; 
         color: red;
         font-size: 1.3rem;
         font-weight: bold;
@@ -32,13 +32,18 @@ export const StyledCardContainer = styled.div`
       &::after {
         content: "generator??"; 
         position: absolute;
-        top: 20px; 
-        right:  -5rem; 
+        top: 10px; 
+        right:-3.5rem; 
         color: red;
         font-size: 1.3rem; 
         font-weight: bold;
         transform: rotate(15deg);
       }
+
+      &:nth-child(1) {
+        max-width: 75%;
+      }
+    
     `}
   }
 
@@ -58,6 +63,18 @@ export const StyledCardContainer = styled.div`
   color: #006efd;
 }
 
+@media (max-width: 1024px) {
+  &:nth-child(2) {
+    max-width: 85%;
+  }
+  
+  &:nth-child(3) {
+  max-width: 90%;
+  }
+}
+
+
+
 `;
 
 export const StyledImageContainer = styled.div`
@@ -67,7 +84,8 @@ export const StyledImageContainer = styled.div`
   padding: 2rem;
 
   @media (max-width: 1024px) {
-    max-width: 3.5rem;
+    max-width: 3rem;
+    padding: 1rem;
   }
 `;
 
@@ -78,7 +96,7 @@ export const StyledTextContainer = styled(({ ...props }) => <div {...props} />)`
   align-items: flex-start;
 
   @media (max-width: 1024px) {
-    padding: 0.5rem 0;
+    padding: 0.4rem 0;
   }
 `;
 
@@ -87,7 +105,7 @@ export const StyledTitle = styled((props) => <SectionSubheading {...props} />)`
   font-weight: 700;
 
   @media (max-width: 1024px) {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 `;
 
@@ -100,6 +118,6 @@ export const StyledDescription = styled((props) => (
   color: black;
 
   @media (max-width: 1024px) {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 `;
