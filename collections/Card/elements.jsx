@@ -2,49 +2,21 @@ import styled from "styled-components";
 import { SectionSubheading, SectionParagraph } from "~/components";
 
 export const StyledCardContainer = styled.div`
-  max-width: 33vw;
   align-items: center;
   display: flex;
   margin: 1rem;
   border-radius: 15px;
   background-color: #e1e4e8;
-  position: relative;
+
+  &:hover {
+    border: 2px solid;
+    border-color: #006efd;
+    color: #006efd;
+  }
 
 
   &:nth-child(1) {
     position: relative;
-
-    ${props =>
-      props.isMobile &&
-      `
-      &::before {
-        content: "link to brief"; 
-        position: absolute;
-        top: 1px; 
-        right: -3.5rem; 
-        color: red;
-        font-size: 1.3rem;
-        font-weight: bold;
-        transform: rotate(15deg);
-        transform-origin: right top;
-      }
-
-      &::after {
-        content: "generator??"; 
-        position: absolute;
-        top: 10px; 
-        right:-3.5rem; 
-        color: red;
-        font-size: 1.3rem; 
-        font-weight: bold;
-        transform: rotate(15deg);
-      }
-
-      &:nth-child(1) {
-        max-width: 75%;
-      }
-    
-    `}
   }
 
   &:nth-child(1) {
@@ -58,9 +30,6 @@ export const StyledCardContainer = styled.div`
 
   &:nth-child(3) {
   max-width: 95%;
-  border: 2px solid transparent;
-  border-color: #006efd;
-  color: #006efd;
 }
 
 @media (max-width: 1024px) {
@@ -69,11 +38,36 @@ export const StyledCardContainer = styled.div`
   }
   
   &:nth-child(3) {
-  max-width: 90%;
+  max-width: 100%;
+  }
+
+  &&:nth-child(1)::before {
+    content: "link to brief"; 
+    position: absolute;
+    top: 1px; 
+    right: -3.5rem; 
+    color: red;
+    font-size: 1.3rem;
+    font-weight: bold;
+    transform: rotate(15deg);
+    transform-origin: right top;
+  }
+
+  &&:nth-child(1)::after {
+    content: "generator??"; 
+    position: absolute;
+    top: 10px; 
+    right:-3.5rem; 
+    color: red;
+    font-size: 1.3rem; 
+    font-weight: bold;
+    transform: rotate(15deg);
+  }
+
+  &:nth-child(1) {
+    max-width: 75%;
   }
 }
-
-
 
 `;
 
