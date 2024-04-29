@@ -7,13 +7,12 @@ export const StyledCardContainer = styled.div`
   margin: 1rem;
   border-radius: 15px;
   background-color: #e1e4e8;
+  border: 2px solid transparent;
 
   &:hover {
-    border: 2px solid;
     border-color: #006efd;
     color: #006efd;
   }
-
 
   &:nth-child(1) {
     position: relative;
